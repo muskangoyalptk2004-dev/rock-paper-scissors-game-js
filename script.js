@@ -22,13 +22,16 @@ function play(userChoice) {
     userScore++;
     userScorePara.innerText = userScore;
     msg.innerText = "You Win!";
+    msg.style.backgroundcolor="green";
   } else {
     compScore++;
     compScorePara.innerText = compScore;
     msg.innerText = "You Lose!";
+    msg.style.backgroundcolor="red";
   }
 }
 
 document.getElementById("rock").addEventListener("click", () => play("rock"));
 document.getElementById("paper").addEventListener("click", () => play("paper"));
 document.getElementById("scissors").addEventListener("click", () => play("scissors"));
+
